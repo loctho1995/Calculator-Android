@@ -1,0 +1,272 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.crazyland.calculator.MainActivity" >
+    
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+     <TableRow 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        
+    <TextView
+    	    android:id = "@+id/padshow"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="right"
+    	    android:gravity="right"
+    	    android:textAlignment="gravity"
+    	    android:textSize="30dp"
+    	    android:text="0"/>      	    
+    </TableRow>
+    
+</TableLayout>
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        
+    <Button
+        android:id="@+id/buttonclear"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:text="CLEAR" />
+
+    <Button
+        android:id="@+id/buttonopenbracket"
+        android:layout_weight="1"
+        android:text="(" />
+
+    <Button
+        android:id="@+id/buttonclosebracket"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text=")" />
+    
+    <Button
+        android:id="@+id/buttonbackspace"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="@string/backspace" />
+    
+    </TableRow>     
+      
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        
+    <Button
+        android:id="@+id/buttonsin"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:text="sin" />
+
+    <Button
+        android:id="@+id/buttoncos"
+        android:layout_weight="1"
+        android:text="cos" />
+
+    <Button
+        android:id="@+id/buttontan"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="tan" />
+    
+    <Button
+        android:id="@+id/buttoncot"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="cot" />    
+    </TableRow>   
+    
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        
+    <Button
+        android:id="@+id/buttonsqrt"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:text="sqrt" />
+
+    <Button
+        android:id="@+id/buttonln"
+        android:layout_weight="1"
+        android:text="ln" />
+
+    <Button
+        android:id="@+id/buttonlog"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="log" />
+    
+    <Button
+        android:id="@+id/buttonmu"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="^" />    
+    </TableRow>  
+    
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        
+    <Button
+        android:id="@+id/buttonmod"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:text="%" />
+
+    <Button
+        android:id="@+id/buttongiaithua"
+        android:layout_weight="1"
+        android:text="!" />
+
+    <Button
+        android:id="@+id/buttonnull1"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="" />
+    
+    <Button
+        android:id="@+id/buttonnull2"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="" />    
+    </TableRow>   
+    
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        
+    <Button
+        android:id="@+id/button1"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_weight="1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="3" />
+    
+    <Button
+        android:id="@+id/buttonplus"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="+" />
+    
+    </TableRow>     
+    
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        
+        <Button
+        android:id="@+id/button4"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_weight="1"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/button6"
+       	android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="6" />
+    
+        <Button
+        android:id="@+id/buttonminus"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="-" />
+    </TableRow>    
+    
+    <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        
+        <Button
+        android:id="@+id/button7"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_weight="1"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="9" />
+    
+        <Button
+        android:id="@+id/buttonmulti"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="x" />
+    
+    </TableRow>        
+        <TableRow 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        
+        <Button
+        android:id="@+id/buttondot"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:text="." />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_weight="1"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/buttonresult"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="=" />
+    
+        <Button
+        android:id="@+id/buttondivide"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:text="/" />
+    </TableRow>   
+</TableLayout>
+   
+
+</LinearLayout>
